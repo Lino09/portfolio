@@ -39,6 +39,7 @@ To get a local copy up and running follow these simple example steps.
 👤 **Abel Herrera**
 
 - GitHub: [@Lino09](https://github.com/Lino09)
+- LinkedIn: [abelherreraz](https://www.linkedin.com/in/abelherreraz/)
 - Twitter: [@AbelHerreaZam1](https://twitter.com/AbelHerreaZam1)
 
 
