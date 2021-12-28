@@ -58,6 +58,7 @@ const lino = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
   new THREE.MeshBasicMaterial({ map: abelTexture })
 );
+lino.position.set(2,3,5)
 scene.add(lino);
 
 // moon
@@ -88,7 +89,7 @@ function moveCamera() {
   camera.position.y = t * -0.0002;
 }
 
-document.body.onscroll = moveCamera();
+window.addEventListener('scroll',() => moveCamera());
 
 
 

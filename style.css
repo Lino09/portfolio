@@ -18,6 +18,7 @@
 }
 
 :root {
+  --cc-gray-9: #0f172a;
   --cc-gray-8: #1e293b;
   --cc-gray-7: #334155;
   
@@ -42,10 +43,11 @@
   text-decoration: none;
 }
 
-html, body, main {
+html {
   scroll-behavior: smooth;
   font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 400;
+  font-size: 20px;
 }
 
 canvas {
@@ -75,7 +77,7 @@ canvas {
 
 h1 {
   font-size: 48px;
-  padding: 20px 24px;
+  padding: 32px;
   width: max-content;
   background-color: whitesmoke;
   color: var(--cc-indigo-9);
@@ -85,3 +87,40 @@ h1 {
 .role {
   color: var(--cc-gray-7);
 }
+
+.presentation {
+  background-color: var(--cc-gray-9);
+  color: var(--cc-indigo-1);
+  margin-left: auto;
+  padding: 32px;
+  width: 75%;
+}
+
+.element {
+  border-radius: 4px;
+  margin-top: 200px;
+}
+
+.contact-cloud {
+  width: 50%;
+
+}
+
+.contact-cloud ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.contact-cloud ul li a {
+  color: var(--cc-indigo-1);
+}
+
+.recents {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
