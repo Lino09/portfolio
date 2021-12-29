@@ -151,20 +151,20 @@
         </section>
         <section class="element contact">
           <h2>Contact Me!</h2>
-          <form action="POST">
-            <div></div>
-            <div>
+          <form action="POST" autocomplete="off">
+            <div class="form-text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque asperiores neque porro aliquam optio voluptates dolore aut cupiditate? Alias, nam.</p></div>
+            <div class="div-form">
               <label for="name">
-                <span>Name</span>
-                <input type="text" name="name" id="name">
+                <span class="legend">Name</span>
+                <input type="text" name="name" id="name" autocomplete="name" placeholder="John Wick">
               </label>
               <label for="email">
-                <span>Name</span>
-                <input type="text" name="email" id="email">
+                <span class="legend">Email</span>
+                <input type="text" name="email" id="email" autocomplete="email" placeholder="John@wick.com">
               </label>
               <label for="name">
-                <span>Name</span>
-                <input type="text" name="name" id="name">
+                <span class="legend">Message</span>
+                <Textarea type="text" name="name" id="name" autocomplete="off" rows="5" placeholder="I need a webpage">Hello Abel! </Textarea>
               </label>
             </div>
           </form>
