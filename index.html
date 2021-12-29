@@ -151,21 +151,22 @@
         </section>
         <section class="element contact">
           <h2>Contact Me!</h2>
-          <form action="POST" autocomplete="off">
+          <form action="https://formspree.io/f/mzbyokjj" method="POST" autocomplete="off" id="contact-form">
             <div class="form-text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque asperiores neque porro aliquam optio voluptates dolore aut cupiditate? Alias, nam.</p></div>
             <div class="div-form">
               <label for="name">
                 <span class="legend">Name</span>
-                <input type="text" name="name" id="name" autocomplete="name" placeholder="John Wick">
+                <input type="text" name="name" id="name" autocomplete="name" placeholder="John Wick" required>
               </label>
               <label for="email">
                 <span class="legend">Email</span>
-                <input type="text" name="email" id="email" autocomplete="email" placeholder="John@wick.com">
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="John@wick.com" required>
               </label>
               <label for="name">
                 <span class="legend">Message</span>
-                <Textarea type="text" name="name" id="name" autocomplete="off" rows="5" placeholder="I need a webpage">Hello Abel! </Textarea>
+                <Textarea type="text" name="name" id="message" autocomplete="off" rows="5" required>Hello Abel! </Textarea>
               </label>
+              <button class="submitbtn" type="submit">Submit</button>
             </div>
           </form>
         </section>
