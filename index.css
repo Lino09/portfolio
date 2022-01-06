@@ -170,11 +170,15 @@ h2 {
 .left img {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  width: 320px;
+  height: 320px;
 }
 
 .right img {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  width: 320px;
+  height: 320px;
 }
 
 .card {
@@ -183,6 +187,7 @@ h2 {
   margin-top: 120px;
   font-weight: 800;
   border-radius: 4px;
+  border: 1px solid gray;
 }
 
 .card-info {
@@ -203,14 +208,13 @@ h2 {
   width: 100%;
   text-align: center;
   font-size: 24px;
-  text-transform: uppercase;
 }
 
 .card-info ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .card-item {
@@ -230,7 +234,6 @@ h2 {
   padding: 8px 16px;
   border-radius: 4px;
 }
-
 
 .card-btns {
   margin-top: 24px;
@@ -268,10 +271,35 @@ h2 {
   gap: 80px
 }
 
-.aboutme p {
+.aboutme div {
   width: 45%;
   background-color: var(--cc-indigo-0);
   padding: 32px;
+  border-radius: 4px;
+}
+
+.aboutme div h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.aboutme-list {
+  width: 100%;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 16px;
+}
+
+.aboutme-list span{
+  grid-column: 1 / span 2;
+  font-weight: 800;
+}
+
+.aboutme-list-item {
+  border: 1px solid var(--cc-emerald-6);
+  padding: 6px 24px;
   border-radius: 4px;
 }
 
@@ -329,20 +357,21 @@ textarea {
 }
 
 form {
+  display: flex;
   margin-top: 100px;
   width: 100%;
   background-color: white;
-  padding: 24px;
-  display: flex;
+  padding: 48px 24px;
   border-radius: 4px;
 }
 
 .form-text {
-  width: 40%;
   display: flex;
+  width: 40%;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 20px;
+  font-size: 28px;
 }
 
 .form-text p {
@@ -366,3 +395,66 @@ form {
   background-color: var(--cc-emerald-5);
 }
 
+footer {
+  padding: 24px 0;
+  background-color: rgba(15, 23, 42, 0.4);
+}
+
+footer a {
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.disabled {
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+  background-color: rgb(216, 216, 216) !important;
+  color: black !important;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
+}
+
+@media only screen and (max-width: 899px) {
+  
+  h1 {
+    width: 100%;
+  }
+
+  .presentation {
+    width: 100%;
+  }
+  
+  .card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .card-info {
+    gap: 12px;
+  }
+
+  
+.card-info ul {
+  gap: 4px
+}
+
+  .aboutme div {
+    width: 100%;
+    padding: 32px 12px;
+  }
+
+  .aboutme-list {
+    gap: 4px;
+  }
+
+  .form-column {
+    flex-direction: column;
+  }
+
+  .form-text {
+    width: 100%;
+  }
+
+}
