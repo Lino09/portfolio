@@ -413,10 +413,10 @@ footer a {
   color: black !important;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 900px) {
+@media only screen and (max-width: 1200px) and (min-width: 1001px) {
 }
 
-@media only screen and (max-width: 899px) {
+@media only screen and (max-width: 1000px) {
   
   h1 {
     width: 100%;
@@ -429,6 +429,7 @@ footer a {
   .card {
     flex-direction: column;
     width: 100%;
+    align-items: center;
   }
 
   .card-info {
